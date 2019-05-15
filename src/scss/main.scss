@@ -1,0 +1,24 @@
+/*  SMACSS & ITCSS ARCHITECTURE FOR CSS | MIT License */
+
+
+/*  Settings Rules ============================== */
+@import 'settings/variables';
+@import 'settings/mixins';
+@import 'settings/fonts';
+
+
+/*  Base Rules ================================== */
+@import 'base/reset';
+
+
+/*  Layout Rules ================================ */
+@import 'layout/l-container';
+
+
+/*  Components Rules ================================ */
+@import 'components/modal';
+
+
+/*  Theme Rules ================================= */
+@import 'theme/default';
+

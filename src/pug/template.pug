@@ -1,0 +1,25 @@
+block variables
+  //- Meta Tags HTML
+  - let siteName = 'ErwCode', pageTitle;
+
+  //- Meta Tags SEO
+  - let metaDescription, metaKewords;
+
+doctype html
+html(lang="es-MX")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    if pageTitle === 'Home'
+      title= `${siteName} | Tecnologías de la Información & Marketing Digital`
+    else
+      title= `${pageTitle} | ${siteName}`
+    meta(name="description" content= metaDescription)
+    meta(name="keywords" content= metaKeywords)
+    meta(name="author" content="ErwCode Technologies")
+    meta(name="robots" content="index, follow")
+    meta(name="theme-color" content="#0C3455")
+    link(rel="shortcut icon" href="./assets/images/favicon.png")
+
+  body
