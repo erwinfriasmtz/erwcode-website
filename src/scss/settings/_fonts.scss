@@ -1,0 +1,31 @@
+/* ********** Averta ********** */
+@font-face {
+  font-family: 'Averta Light';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('Averta Light'), url('/assets/fonts/Averta_Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Averta Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('Averta Regular'), url('/assets/fonts/Averta_Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Averta Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Averta Bold'), url('/assets/fonts/Averta_Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Averta Black';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('Averta Black'), url('/assets/fonts/Averta_Bold.otf') format('otf');
+}
