@@ -1,8 +1,7 @@
 const path                  = require('path'),
       HtmlWebpackPlugin     = require('html-webpack-plugin'),
       MiniCssExtractPlugin  = require('mini-css-extract-plugin'),
-      autoprefixer          = require('autoprefixer'),
-      CleanWebpackPlugin    = require('clean-webpack-plugin');
+      autoprefixer          = require('autoprefixer');
 
 module.exports = {
   entry: './src/index.js',
@@ -66,7 +65,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/index.pug'
     }),
