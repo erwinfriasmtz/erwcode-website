@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <filter id="bg" x="0" y="0" width="105" height="105" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#7e76f9" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mouse" transform="translate(-733 -605)">
+    <g transform="matrix(1, 0, 0, 1, 733, 605)" filter="url(#bg)">
+      <circle id="bg-2" data-name="bg" cx="22.5" cy="22.5" r="22.5" transform="translate(30 20)" fill="#fff"/>
+    </g>
+    <g id="mouse-2" data-name="mouse" transform="translate(776.278 633.911)">
+      <g id="Grupo_1291" data-name="Grupo 1291" transform="translate(0)">
+        <g id="Grupo_1290" data-name="Grupo 1290">
+          <path id="Trazado_1211" data-name="Trazado 1211" d="M44.211,0a9.15,9.15,0,0,0-9.142,9.138v9.152a9.142,9.142,0,0,0,18.285,0V9.138A9.151,9.151,0,0,0,44.211,0Zm8.126,18.289a8.126,8.126,0,0,1-16.253,0V9.138a8.126,8.126,0,0,1,16.253,0Z" transform="translate(-35.069 0)" fill="#00a8ff"/>
+          <path id="Trazado_1212" data-name="Trazado 1212" d="M101.818,23.379a.508.508,0,0,0-.508.508v4.6a.508.508,0,0,0,1.016,0v-4.6A.508.508,0,0,0,101.818,23.379Z" transform="translate(-92.676 -20.332)" fill="#00a8ff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
