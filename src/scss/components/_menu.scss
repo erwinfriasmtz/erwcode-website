@@ -1,0 +1,224 @@
+/* ********** Menu ********** */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* ********** Hamburger Menu ********** */
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  padding: 0.5rem;
+  margin: 15px;
+  border-radius: 3px;
+  background: var(--secondary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > span {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: var(--quaternary-color);
+    transition: all 0.4s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 3px;
+      background: inherit;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 3px;
+      background: inherit;
+      top: 10px;
+    }
+  }
+
+  @include mq(m) {
+    display: none;
+  }
+}
+
+
+/* ********** Hamburger Animation ********** */
+.toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  opacity: 0;
+
+  &:checked {
+    + .hamburger > span {
+      transform: rotate(135deg);
+      &:before, &:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+    &:hover + .hamburger > span {
+      transform: rotate(225deg);
+    }
+  }
+
+  @include mq(m) {
+    display: none;
+  }
+}
+
+
+/* ********** Show Menu ********** */
+.toggler:checked ~ .open-menu {
+  left: 0;
+
+  > .animation {
+    transform: scale(1);
+    transition-duration: .7s;
+  }
+}
+
+.logo, .logo-menu {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 1em 0 1em 1em;
+  object-fit: contain;
+
+  @include mq(m) {
+    display: none;
+  }
+
+  &-menu {
+    display: none;
+    @include mq(m){
+      display: block;
+      position: relative;
+      width: 150px;
+      padding: 1em 0;
+      object-fit: contain;
+    }
+
+    @include mq(l) {
+      width: 200px;
+    }
+  }
+}
+
+.open-menu {
+  position: absolute;
+  background-color: rgba(#000, 0.4);
+  width: 100vw;
+  height: 100vh;
+  left: -100vh;
+  z-index: 5;
+  transition: all .5s;
+
+  @include mq(m) {
+    top: 0;
+    position: sticky;
+    width: 100vw;
+    height: auto;
+    background-color: var(--primary-color);
+    z-index: 10;
+  }
+
+  // open-menu__container
+  &__container {
+    @include mq(m) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.nav-menu {
+  transform: translateY(25%);
+  @include mq(m) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // nav-menu__item
+  &__item {
+    width: 60%;
+    margin: auto;
+
+    @include mq(m) { width: auto;}
+  }
+
+  // nav-menu__link
+  &__link {
+    display: block;
+    padding: 0.5em 1em;
+    color: var(--text-color-white);
+    font: {
+      family: var(--regular-font);
+      size: 1.4em;
+    }
+    text-align: center;
+
+    @include mq(m) {
+      font-size: 0.8em;
+      padding-bottom: 3em;
+      color: var(--text-color-white);
+
+      &:hover { color: var(--secondary-color); }
+    }
+
+    @include mq(l) { font-size: 1em; }
+
+    &--login {
+      background-color: var(--tertiary-color);
+      border-radius: 3px;
+      padding: 0.3em;
+
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color-white);
+      }
+
+      @include mq(m) {
+        margin-bottom: 2.5em;
+        padding: 0.2em 0.3em;
+      }
+    }
+  }
+}
+
+
+/* ********** Active JS ********** */
+.active-menu {
+  color: var(--secondary-color);
+
+  @include mq(m){ background-color: none;}
+}
