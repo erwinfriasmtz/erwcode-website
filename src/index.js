@@ -20,6 +20,9 @@ import svgProgrammer  from './images/programmer.svg'
 import svgMouse       from './images/mouse.svg'
 import svgWorkflow    from './images/workflow.svg'
 import svgMobile      from './images/mobile.svg'
+import svgRectangle   from './images/vectorRectangle.svg'
+import svgSplash      from './images/vectorSplash.svg'
+import svgComilla     from './images/icon-comilla.svg'
 
 
 /* ********** JavaScript ********** */
