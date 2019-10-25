@@ -18,6 +18,8 @@ import svgHorizont    from './images/vectorHorizont.svg'
 import svgVertical    from './images/vectorVertical.svg'
 import svgProgrammer  from './images/programmer.svg'
 import svgMouse       from './images/mouse.svg'
+import svgWorkflow    from './images/workflow.svg'
+import svgMobile      from './images/mobile.svg'
 
 
 /* ********** JavaScript ********** */
