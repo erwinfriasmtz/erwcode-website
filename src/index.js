@@ -10,7 +10,7 @@ import scss from './scss/main.scss'
 
 
 /* ********** Images ********** */
-// import favicon      from './images/favicon.png'
+import favicon      from './images/favicon.png'
 import logoHorizont from './images/imagotipo-horizont-white.svg'
 
 
