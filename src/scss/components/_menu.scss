@@ -5,6 +5,33 @@
   z-index: 100;
 }
 
+.logo, .logo-menu {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 1em 0 1em 1em;
+  object-fit: contain;
+  z-index: 100;
+
+  @include mq(m) {
+    display: none;
+  }
+
+  &-menu {
+    display: none;
+    @include mq(m){
+      display: block;
+      position: relative;
+      width: 150px;
+      padding: 1em 0;
+      object-fit: contain;
+    }
+
+    @include mq(l) {
+      width: 200px;
+    }
+  }
+}
 
 /* ********** Hamburger Menu ********** */
 .hamburger {
@@ -103,32 +130,6 @@
   }
 }
 
-.logo, .logo-menu {
-  position: absolute;
-  display: block;
-  width: 200px;
-  padding: 1em 0 1em 1em;
-  object-fit: contain;
-
-  @include mq(m) {
-    display: none;
-  }
-
-  &-menu {
-    display: none;
-    @include mq(m){
-      display: block;
-      position: relative;
-      width: 150px;
-      padding: 1em 0;
-      object-fit: contain;
-    }
-
-    @include mq(l) {
-      width: 200px;
-    }
-  }
-}
 
 .open-menu {
   position: absolute;
