@@ -1,0 +1,133 @@
+/* ********** Footer ********** */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  text-align: center;
+  padding: 2em 0;
+
+  @include mq(m) {
+    text-align: initial;
+    background-image: url(/src/images/continentes.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: 70%;
+  }
+
+  @include mq(l) { background-position-y: 20%; background-size: 60%; }
+  @include mq(xl) { background-position-y: 10%; background-size: 40%; }
+
+  // footer-container
+  &-container {
+    width: 90%;
+    margin: auto;
+
+    @include mq(m) {
+      width: 100%;
+      font-size: 0.9em;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-areas: "contact contact links social help" "copy copy copy copy copy";
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  // footer__item
+  &__item {
+    margin: 1em auto;
+    &:nth-child(1) { font-family: var(--ligth-font); }
+
+    @include mq(m) {
+      margin: 0;
+
+      &:nth-child(1) { grid-area: contact; }
+
+      &:nth-child(2) { grid-area: links; justify-self: end;}
+
+      &:nth-child(3) { grid-area: social; justify-self: end;}
+
+      &:nth-child(4) { grid-area: help; justify-self: end;}
+
+      &:nth-child(5) { grid-area: copy;}
+    }
+  }
+
+  // footer__logo
+  &__logo {
+    width: 150px;
+    margin-bottom: 1em;
+
+    @include mq(m) { margin: 0;}
+  }
+
+  // footer__contact
+  &__contact {
+    @include mq(m) { margin-top: 5.5em; }
+  }
+
+  // footer__contactLink
+  &__contactLink {
+    display: block;
+    color: var(--text-color-white);
+    cursor: pointer;
+
+    &:hover { color: var(--senary-color); }
+  }
+
+  // footer__title
+  &__title {
+    font-family: var(--black-font);
+    text-transform: uppercase;
+    margin: 1em auto;
+
+    @include mq(m) { margin: 0 auto; font-size: 1em; }
+    @include mq(l) { font-size: 1.2em; }
+    @include mq(xl) { font-size: 1em; }
+  }
+
+  // footer__link
+  &__link {
+    display: block;
+    color: var(--text-color-white);
+    margin: 1em;
+    cursor: pointer;
+
+    &:hover { color: var(--secondary-color); }
+
+    @include mq(m) { margin: 1em 1em 1em 0}
+  }
+
+  // footer__copy
+  &__copy {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 2px solid var(--tertiary-color);
+
+    @include mq(m) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // footer__brand
+  &__brand {
+    font-family: var(--ligth-font);
+    > span { font-family: var(--bold-font); }
+  }
+
+  // // footer__social
+  &__social {
+    margin-top: 2.5em;
+
+    @include mq(m) { margin: 0; text-align: right;}
+  }
+
+  // footer__iconSocial
+  &__iconSocial {
+    margin: 0 1em;
+
+    @include mq(m) { width: 10%; margin: 0 1em 0 0;}
+    @include mq(l) { width: 15%; }
+
+  }
+}

@@ -12,6 +12,7 @@ import scss from './scss/main.scss'
 /* ********** Images ********** */
 import favicon      from './images/favicon.png'
 import logoHorizont from './images/imagotipo-horizont-white.svg'
+import logoMain     from './images/imagotipo-main-white.svg'
 
 import svgCircle      from './images/vectorCircle.svg'
 import svgHorizont    from './images/vectorHorizont.svg'
@@ -44,6 +45,15 @@ import logoAtope       from './images/logo-atope.svg'
 import logoGonzalez    from './images/logo-gonzalez.svg'
 import logoDt          from './images/logo-dt.svg'
 import logoTepole      from './images/logo-tepole.svg'
+
+import continents from './images/continentes.svg'
+import location   from './images/location.svg'
+import phone      from './images/phone.svg'
+import mail       from './images/mail.svg'
+import facebook   from './images/facebook.svg'
+import instagram  from './images/instagram.svg'
+import linkedin   from './images/linkedin.svg'
+
 
 /* ********** JavaScript ********** */
 import { activeMenu } from './js/menu'
