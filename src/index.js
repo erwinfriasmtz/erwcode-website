@@ -25,7 +25,7 @@ import svgMobile      from './images/mobile.svg'
 import svgRectangle   from './images/vectorRectangle.svg'
 import svgRectangleH  from './images/vectorRectangleH.svg'
 import svgSplash      from './images/vectorSplash.svg'
-import svgComilla     from './images/icon-comilla.svg'
+import svgComment     from './images/icon-comment.svg'
 
 import iconUi         from './images/icon-ui.svg'
 import iconWeb        from './images/icon-web.svg'

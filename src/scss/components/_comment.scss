@@ -19,15 +19,23 @@
 
   // .comment__icon
   &__icon {
-    width: 10%;
+    width: 20%;
     margin-bottom: 1em;
 
-    @include mq(m) { width: 50px;}
+    @include mq(m) { width: 10%;}
+    @include mq(xl) { width: 70px;}
   }
 
   // .comment__description
   &__description {
     font-family: var(--ligth-font);
+
+    &::after, &::before {
+      content: ' " ';
+      color: var(--secondary-color);
+      font-family: var(--black-font);
+      font-size: 1.5em;
+    }
 
     @include mq(m) { font-size: 1.2em; }
   }
