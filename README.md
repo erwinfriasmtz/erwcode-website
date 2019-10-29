@@ -5,7 +5,7 @@
 
 Este repositorio contiene el código Front-End & Back-End necesario para el desarrollo del sitio web [erwcode.com](https://erwcode.com).
 
-![FontCDN screenshot](./src/images/hero.png)
+![FontCDN screenshot](./src/images/mockup.png)
 
 > Flujo de trabajo utilizando Webpack 4, PUG, SCSS, SMACSS & ITCSS, BEM, PostCSS, Babel, Composer, PHP Slim, Medoo & MariaDB.
 
