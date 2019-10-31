@@ -35,7 +35,7 @@
   // footer__item
   &__item {
     margin: 1em auto;
-    &:nth-child(1) { font-family: var(--ligth-font); }
+    &:nth-child(1) { font-family: var(--ligth-font); font-style: normal; }
 
     @include mq(m) {
       margin: 0;
@@ -62,6 +62,9 @@
 
   // footer__contact
   &__contact {
+
+    &:nth-child(1n)::before { content: '🌎 ';}
+
     @include mq(m) { margin-top: 5.5em; }
   }
 
@@ -131,3 +134,6 @@
 
   }
 }
+
+a[href^='mailto']::before { content: '📧 '; }
+a[href^='tel']::before { content: '☎️ '; }

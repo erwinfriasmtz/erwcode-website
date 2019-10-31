@@ -27,28 +27,25 @@
     align-items: center;
 
     @include mq(m) {
-      width: 90%;
+      width: 100%;
       height: calc(100vh - 70.2px);
       grid-template-columns: repeat(2,1fr);
     }
 
-    @include mq(l) {
-      width: 100%;
-      height: calc(100vh - 82.94px);
-    }
-
-    @include mq(xl) {
-      margin-top: 2em;
-      align-items: start;
-    }
+    @include mq(l) { height: calc(100vh - 82.94px); }
   }
 
-  // .hero-image__item:nth-child(2)
-  &__item:nth-child(2){
-    display: none;
 
-    @include mq(m) { display: block; }
+  &__item {
+    // .hero-image__item:nth-child(2)
+    &:nth-child(2){
+      display: none;
+      @include mq(m) { display: block; }
+    }
+
+    @include mq(m) { padding-bottom: 3em;}
   }
+
 
   // .hero-image__title
   &__title {
