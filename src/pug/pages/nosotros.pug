@@ -36,7 +36,7 @@ block body
   //- Expertise Section
   include ../includes/expertise.pug
 
-  //- Philosophy
+  //- Philosophy Section
   section.philosophy
     .philosophy__container.l-container
       article.philosophy__content
@@ -59,6 +59,24 @@ block body
         .philosophy__item
           img.philosophy__photo(src="./assets/images/oficina-team.jpg", alt="Visión ErwCode")
 
+  //- Values Section
+  .value
+    .value__container.l-container
+      .value__item
+        img.value__icon(src="./assets/images/liderazgo.svg", alt="Liderazgo")
+        p.value__description #[span Liderazgo] en trabajar para hacer un mundo mejor.
+      .value__item
+        img.value__icon(src="./assets/images/colaboracion.svg", alt="Colaboración")
+        p.value__description #[span Colaboración] para potenciar el talento colectivo.
+      .value__item
+        img.value__icon(src="./assets/images/compromiso.svg", alt="Compromiso")
+        p.value__description #[span Compromiso] con nuestros ideales y nuestros clientes.
+      .value__item
+        img.value__icon(src="./assets/images/calidad.svg", alt="Calidad")
+        p.value__description #[span Calidad] siempre en búsqueda de la excelencia.
+      .value__item
+        img.value__icon(src="./assets/images/pasion.svg", alt="Pasión")
+        p.value__description #[span Pasión] al estar comprometidos con el corazón y la mente.
 
   //- Footer Section
   include ../includes/footer.pug

@@ -59,6 +59,13 @@ import mision     from './images/mission.svg'
 import uVision    from './images/oficina-team.jpg'
 import vision     from './images/vision.svg'
 
+import liderazgo    from './images/liderazgo.svg'
+import colaboracion from './images/colaboracion.svg'
+import compromiso   from './images/compromiso.svg'
+import calidad      from './images/calidad.svg'
+import pasion       from './images/pasion.svg'
+
+/* ********** Videos ********** */
 import sketching  from './media/sketching.mp4'
 
 

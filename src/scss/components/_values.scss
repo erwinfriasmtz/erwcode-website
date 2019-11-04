@@ -1,0 +1,50 @@
+/* ********** Values ********** */
+.value {
+  background: url(/src/images/vectorCircle.svg) no-repeat, url(/src/images/vectorHorizont.svg) no-repeat;
+  background-color: var(--primary-color);
+  background-position: 0% 50%, 100% 50%;
+  background-size: 20%, 90%;
+  text-align: center;
+  padding: 3.5em 0 2em 0;
+
+  @include mq(m) {
+    padding: 2em 0;
+    background-size: 15%, 60%;
+  }
+
+  @include mq(xl) {
+    background-position: 0 50%, 90% 50%;
+    background-size: 10%, 30%;
+  }
+
+  // .value__container
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    @include mq(m) {
+      width: 100%;
+      grid-template-columns: repeat(5,1fr);
+      align-items: end;
+    }
+  }
+
+  // .value__icon
+  &__icon {
+    width: 80px;
+    margin-bottom: 1em;
+  }
+
+  // .value__description
+  &__description {
+    color: var(--text-color-white);
+    font-family: var(--light-font);
+
+    > span { color: var(--tertiary-color); font-family: var(--bold-font); }
+  }
+}
