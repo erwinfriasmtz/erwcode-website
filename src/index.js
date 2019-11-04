@@ -51,7 +51,9 @@ import facebook   from './images/facebook.svg'
 import instagram  from './images/instagram.svg'
 import linkedin   from './images/linkedin.svg'
 
-import cover      from './images/sketching.jpg'
+import usRealidad from './images/realidad-aumentada.jpg'
+import about      from './images/about-us.svg'
+
 import sketching  from './media/sketching.mp4'
 
 

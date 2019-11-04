@@ -1,0 +1,80 @@
+/* ********** Our Story ********** */
+.our-story {
+  background: url(/src/images/about-us.svg) no-repeat;
+  background-size: 90%;
+  background-position: 50% 100%;
+  text-align: center;
+
+  @include mq(m) {
+    background-size: 60%;
+    background-position: 90% 100%;
+    margin: 2em auto;
+  }
+
+  @include mq(xl) {
+    background-size: 50%;
+    background-position: 80% 100%;
+  }
+
+  // .our-story__container
+  &__container {
+    width: 80%;
+
+    @include mq(m) {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "photo content";
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+  }
+
+  // .our-story__item
+  &__item {
+    margin: 2em auto;
+
+    &:nth-child(2) { text-align: initial;}
+
+    @include mq(m) {
+      margin: 4em auto;
+
+      &:nth-child(1) {
+        text-align: initial;
+        grid-area: content;
+        align-self: start;
+      }
+
+      &:nth-child(2) {
+        grid-area: photo;
+
+        @include mq(l) { text-align: center; }
+      }
+    }
+  }
+
+  // .our-story__title
+  &__title {
+    text-transform: uppercase;
+    font-family: var(--ligth-font);
+    font-size: 0.7em;
+    margin-bottom: 1.5em;
+  }
+
+  // .our-story__description > span
+  &__description {
+    > span { font-family: var(--bold-font); color: var(--tertiary-color); }
+  }
+
+  // .our-story__photo
+  &__photo {
+    width: 90%;
+    box-shadow: 30px 30px var(--primary-color);
+
+    @include mq(l) {
+      width: 60%;
+      box-shadow: 40px 30px var(--primary-color);
+    }
+  }
+}
