@@ -5,6 +5,19 @@ append variables
   - metaKeywords    = 'ErwCode Technologies, ErwCode, Soluciones tecnológicas de calidad, Empresas emprendedoras, Forbes, Equipo de ErwCode, Filosofía de ErwCode'
 
 block body
+  //- Hero Video Section
+  section.hero-video
+    .hero-video__fullscreen
+      video(src="./assets/media/sketching.mp4" autoplay loop)
+    .hero-video__overlay
+    .hero-image__container.l-container
+      .hero-image__item
+        h1.hero-video__title ErwCode Technologies
+        p.hero-video__description
+          | Somos un #[span emprendimiento mexicano] 🌵 100% remoto con una sólida experiencia
+          | en #[span TI] 🤖 y #[span Marketing Digital] 🧲.
+    .mouse-scroll.l-container
+      img.mouse-scroll__icon(src="./assets/images/mouse.svg", alt="Mouse Scroll")
 
   //- Footer Section
   include ../includes/footer.pug

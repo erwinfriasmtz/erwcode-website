@@ -51,6 +51,9 @@ import facebook   from './images/facebook.svg'
 import instagram  from './images/instagram.svg'
 import linkedin   from './images/linkedin.svg'
 
+import cover      from './images/sketching.jpg'
+import sketching  from './media/sketching.mp4'
+
 
 /* ********** JavaScript ********** */
 import { activeMenu } from './js/menu'
