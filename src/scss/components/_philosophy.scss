@@ -1,0 +1,81 @@
+/* ********** Philosophy ********** */
+.philosophy {
+  text-align: center;
+
+  // .philosophy__container
+  &__container {
+    width: 80%;
+    margin: auto;
+
+    @include mq(m) { width: 90%; }
+  }
+
+  // .philosphy__content
+  &__content {
+    margin: 3em 0;
+
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      gap: 2em;
+
+      &:nth-child(1) {
+        grid-template-areas: "content photo";
+        background: url(/src/images/mission.svg) no-repeat;
+        background-size: 60%;
+        background-position: 0 100%;
+      }
+      &:nth-child(2) {
+        grid-template-areas: "photo content";
+        background: url(/src/images/vision.svg) no-repeat;
+        background-size: 50%;
+        background-position: 100% 100%;
+      }
+    }
+  }
+
+  // .philosophy__item
+  &__item {
+    margin: 2em 0;
+
+    &:nth-child(2) { text-align: initial; }
+
+
+    @include mq(m) {
+      &:nth-child(1) { grid-area: content; text-align: initial;}
+      &:nth-child(2) { grid-area: photo; text-align: center;}
+    }
+  }
+
+  // .philosophy__title
+  &__title {
+    text-transform: uppercase;
+    font-family: var(--ligth-font);
+    font-size: 0.7em;
+    margin-bottom: 1.5em;
+  }
+
+  // .philosophy__description > span
+  &__description {
+    font-size: 1.1em;
+
+    @include mq(l) { font-size: 1.3em; }
+
+    > span {
+      font-family: var(--bold-font);
+      color: var(--tertiary-color);
+    }
+  }
+
+  // .philosophy__photo
+  &__photo {
+    width: 90%;
+    box-shadow: 30px 30px var(--primary-color);
+
+    @include mq(l) {
+      width: 60%;
+      box-shadow: 40px 30px var(--primary-color);
+    }
+  }
+}

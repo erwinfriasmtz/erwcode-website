@@ -36,5 +36,29 @@ block body
   //- Expertise Section
   include ../includes/expertise.pug
 
+  //- Philosophy
+  section.philosophy
+    .philosophy__container.l-container
+      article.philosophy__content
+        .philosophy__item
+          h2.philosophy__title Misión
+          p.philosophy__description
+            | Creamos #[span soluciones de valor] que te permiten conectar y trascender con tus clientes,
+            | mediante la correcta implementación de #[span software de calidad] y #[span estratégias de marketing digital]
+            | que se adapten a las necesidades de tu empresa.
+        .philosophy__item
+          img.philosophy__photo(src="./assets/images/chico-programando.jpg", alt="Misión ErwCode")
+
+      article.philosophy__content
+        .philosophy__item
+          h2.philosophy__title Visión
+          p.philosophy__description
+            | Ser una #[span empresa líder de Tecnologías de la Información], reconocida por los distintos sectores
+            | de México debido a su #[span constante innovación] en la búsqueda y aplicación de soluciones tecnológicas
+            | que permitan el #[span crecimiento exponencial de empresas] en nuestro país.
+        .philosophy__item
+          img.philosophy__photo(src="./assets/images/oficina-team.jpg", alt="Visión ErwCode")
+
+
   //- Footer Section
   include ../includes/footer.pug

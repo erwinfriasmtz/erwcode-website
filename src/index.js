@@ -54,6 +54,10 @@ import linkedin   from './images/linkedin.svg'
 
 import usRealidad from './images/realidad-aumentada.jpg'
 import about      from './images/about-us.svg'
+import usMision   from './images/chico-programando.jpg'
+import mision     from './images/mission.svg'
+import uVision    from './images/oficina-team.jpg'
+import vision     from './images/vision.svg'
 
 import sketching  from './media/sketching.mp4'
 
