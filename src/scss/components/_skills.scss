@@ -1,0 +1,36 @@
+/* ********** Skills ********** */
+.skills {
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+  background: url(/src/images/skills.svg) no-repeat 0 50%;;
+
+
+  @include mq(m) { background-size:30%;}
+  @include mq(l) { width: 100%; background-size: 15%;}
+  @include mq(xl) { margin: 3em auto;}
+
+  &__container {
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1em;
+
+    @include mq(l) { grid-template-columns: repeat(10,1fr); }
+  }
+
+  &__comingsoon {
+    padding-top: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    > .skills__item {
+      width: 50%;
+      margin: 0 1em;
+
+      @include mq(m) { width: 20%; }
+      @include mq(xl) { width: 10%; }
+    }
+  }
+}
