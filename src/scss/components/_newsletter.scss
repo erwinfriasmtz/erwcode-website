@@ -22,9 +22,9 @@
       grid-template-columns: repeat(2,1fr);
       justify-content: center;
       align-items: center;
-      gap: 1em;
     }
 
+    @include mq(l) { gap: 2em;}
     @include mq(xl) { padding: 3em 0; }
   }
 
@@ -37,15 +37,24 @@
     font-weight: 100;
   }
 
-  // .newsletter__form
+  // .newsletter-form
   &-form {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
+    flex-flow: column wrap;
     margin-top: 1.5em;
 
-    @include mq(m) { margin-top: 0; }
+    @include mq(l) {
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1em;
+    }
+    // .newsletter-form__item
+    &__item {
+      margin: 1em 0;
+
+      &:nth-child(2) { display: flex;}
+    }
 
     // .newsletter-form__submit
     &__submit {
