@@ -1,5 +1,18 @@
 extends ../template.pug
 append variables
   - pageTitle       = 'Servicios'
-  - metaDescription = 'Conecta y Trasciende con tus clientes implementando tecnologías de la información y marketing digital.'
+  - metaDescription = 'Conecta y Trasciende con tus clientes implementando tecnología y marketing digital en tu empresa.'
   - metaKeywords    = 'Páginas web en Tehuacán, Manejo de redes sociales, Desarrollo de Software, Agencia de Marketing en Puebla, Servicios de páginas web rn tehuacán'
+
+block body
+  //- Hero Image
+  section.hero-image
+    .hero-image__vector
+    .hero-image__container.l-container
+      .hero-image__item
+        h1.hero-image__title.hero-image__title--services Nuestros Servicios 👌 #[br] #[span.txt-type(data-wait="2000", data-words='["Diseño UI/UX", "Desarrollo Web", "Auditoría SEO", "Consultoría SEM", "Community Manager"]')]
+        a.hero-image__btn(href="#") Iniciar Proyecto
+      .hero-image__item
+        img.hero-image__illustration(src="./assets/images/team.svg", alt="Servicios de ErwCode")
+    .mouse-scroll.l-container
+      img.mouse-scroll__icon(src="./assets/images/mouse.svg", alt="Mouse Scroll")

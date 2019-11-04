@@ -19,6 +19,7 @@ import svgCircleR     from  './images/vectorCircleRight.svg'
 import svgHorizont    from './images/vectorHorizont.svg'
 import svgVertical    from './images/vectorVertical.svg'
 import svgProgrammer  from './images/programmer.svg'
+import svgTeam        from './images/team.svg'
 import svgMouse       from './images/mouse.svg'
 import svgWorkflow    from './images/workflow.svg'
 import svgServicios   from './images/services.svg'
@@ -71,5 +72,7 @@ import sketching  from './media/sketching.mp4'
 
 /* ********** JavaScript ********** */
 import { activeMenu } from './js/menu'
+import { writterEffect } from './js/writerEffect'
 
 activeMenu()
+writterEffect()

@@ -54,6 +54,21 @@
 
     @include mq(m) { font-size: 3em; }
     @include mq(l) { font-size: 2.3em; }
+
+    // .hero-image__title--services
+    &--services {
+      font-size: 2.1em;
+      margin-bottom: 1.5em;
+
+      @include mq(l) { font-size: 3em; }
+
+      > span {
+        font-family: var(--ligth-font);
+        color: var(--tertiary-color);
+
+        > .txt { border-right: 0.2rem solid var(--secondary-color); }
+      }
+    }
   }
 
   // .hero-image__description
