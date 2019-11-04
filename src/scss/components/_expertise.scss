@@ -1,0 +1,52 @@
+/* ********** Expertise ********** */
+.expertise {
+  background: url(/src/images/vectorHorizont.svg) no-repeat, url(/src/images/vectorCircleRight.svg) no-repeat;
+  background-color: var(--primary-color);
+  background-position: 0% 50%, 100% 50%;
+  background-size: 90%, 20%;
+  text-align: center;
+  margin: 3.5em auto 2em auto;
+
+  @include mq(m) {
+    margin: 2em auto;
+    background-size: 60%, 15%;
+  }
+
+  @include mq(xl) {
+    background-position: 20% 50%, 100% 50%;
+    background-size: 25%, 8%;
+  }
+
+  // .expertise__container
+  &__container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+
+    @include mq(m) { width: 100%; grid-template-columns: repeat(4,1fr); }
+
+  }
+
+  // .expertise__item
+  &__item { padding: 1em 1em 3em 1em; }
+
+  // .expertise__data
+  &__data {
+    font-family: var(--ligth-font);
+    color: var(--text-color-white);
+
+    > span {
+      font-family: var(--bold-font);
+      font-size: 3em;
+      color: var(--tertiary-color);
+
+      &:nth-child(1n)::before {
+        content: '+';
+        font-family: var(--ligth-font);
+        color: var(--text-color-white);
+      }
+    }
+  }
+}

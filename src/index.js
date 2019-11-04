@@ -15,6 +15,7 @@ import logoHorizont from './images/imagotipo-horizont-white.svg'
 import logoMain     from './images/imagotipo-main-white.svg'
 
 import svgCircle      from './images/vectorCircle.svg'
+import svgCircleR     from  './images/vectorCircleRight.svg'
 import svgHorizont    from './images/vectorHorizont.svg'
 import svgVertical    from './images/vectorVertical.svg'
 import svgProgrammer  from './images/programmer.svg'
