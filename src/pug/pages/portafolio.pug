@@ -8,6 +8,20 @@ append variables
   - ogImage         = 'https://erwcode.com/assets/images/portafolio.jpg'
 
 block body
+  //- Hero Section
+  section.hero-image
+    .hero-image__vector
+    .hero-image__container.l-container
+      .hero-image__item
+        h1.hero-image__title.hero-image__title--portfolio Nuestro #[span Portafolio] 👨‍🚀👩‍🚀
+        p.hero-image__description
+          | Transformamos las grande ideas 💡 en productos sorprendentes 🏆 que te permiten conectar
+          | con tu comunidad y seguir creciendo 🔥.
+        a.hero-image__btn(href="#") Iniciar Proyecto
+      .hero-image__item
+        img.hero-image__illustration(src="./assets/images/laptop.svg", alt="Portafolio de ErwCode")
+    .mouse-scroll.l-container
+      img.mouse-scroll__icon(src="./assets/images/mouse.svg", alt="Mouse Scroll")
 
   //- Footer Section
     include ../includes/footer.pug

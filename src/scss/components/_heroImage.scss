@@ -55,10 +55,9 @@
     @include mq(m) { font-size: 3em; }
     @include mq(l) { font-size: 2.3em; }
 
-    // .hero-image__title--services
-    &--services {
+    // .hero-image__title--services, .hero-image__title--portfolio
+    &--services, &--portfolio{
       font-size: 2.1em;
-      margin-bottom: 1.5em;
 
       @include mq(l) { font-size: 3em; }
 
@@ -69,6 +68,9 @@
         > .txt { border-right: 0.2rem solid var(--secondary-color); }
       }
     }
+
+    // .hero-image__title--services
+    &--services { margin-bottom: 1.5em; }
   }
 
   // .hero-image__description

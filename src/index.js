@@ -20,6 +20,7 @@ import svgHorizont    from './images/vectorHorizont.svg'
 import svgVertical    from './images/vectorVertical.svg'
 import svgProgrammer  from './images/programmer.svg'
 import svgTeam        from './images/team.svg'
+import svgLaptop      from './images/laptop.svg'
 import svgMouse       from './images/mouse.svg'
 import svgWorkflow    from './images/workflow.svg'
 import svgServicios   from './images/services.svg'
@@ -109,6 +110,7 @@ import hotjar       from './images/hotjar.svg'
 import aws          from './images/aws.svg'
 import cloud        from './images/cloud.svg'
 import azure        from './images/azure.svg'
+
 
 /* ********** Videos ********** */
 import sketching  from './media/sketching.mp4'
