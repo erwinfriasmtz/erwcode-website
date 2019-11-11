@@ -23,5 +23,41 @@ block body
     .mouse-scroll.l-container
       img.mouse-scroll__icon(src="./assets/images/mouse.svg", alt="Mouse Scroll")
 
+  //- Workflow Section
+  section.portfolio.l-container
+    h2.workflow__title Conoce nuestro portafolio
+    h3.workflow__subtitle Software, Web, Apps, Marketing, SEO
+    .portfolio__container
+      article.portfolio__item
+        .portfolio__image.portfolio__image--atope
+        h3.portfolio__title Construyendo ATOPE #[span Website] #[hr.portfolio__line]
+        p.portfolio__description
+          | Construyendo ATOPE, es una empresa dedicada a diseñar, remodelar, reparar y transformar espacios,
+          | brindando soluciones funcionales, innovadoras e integrales a viviendas públicas y privadas.
+      article.portfolio__item
+        .portfolio__image.portfolio__image--gonzalez
+        h3.portfolio__title González y Asociados #[span Website] #[hr.portfolio__line]
+        p.portfolio__description
+          | González y Asociados | Tax & Law es una firma joven e innovadora en México, buscan destacar por su
+          | profesionalismo y compromiso, prestando servicios jurídicos y legales en CDMX y Puebla.
+      article.portfolio__item
+        .portfolio__image.portfolio__image--sacamo
+        h3.portfolio__title SACAMO #[span Community Manager] #[hr.portfolio__line]
+        p.portfolio__description
+          | Salvador Cababie Moro es un empresario, hombre de negocios, emprendedor desde los 15 años,
+          | ha logrado a través de la constancia y disciplina materializar sus ideas en poryectos exitosos.
+      article.portfolio__item
+        .portfolio__image.portfolio__image--llantas
+        h3.portfolio__title Llantas y Rines #[span UI/UX] #[hr.portfolio__line]
+        p.portfolio__description
+          | Llantas y Rines en Puebla fue un proyecto que tenía como objetivo brindar soluciones sofisticadas
+          | a personas que necesitaban asesoría o mantenimiento selecto a sus automóviles.
+      article.portfolio__item
+        .portfolio__image.portfolio__image--directorio
+        h3.portfolio__title Directorio Tehuacán #[span eCommerce] #[hr.portfolio__line]
+        p.portfolio__description
+          | La plataforma de Directorio Tehuacán permite que las personas puedan buscar cualquier negocio desde la comodidad de su hogar,
+          | implementando WooCommerce y consumiendo la API de Google Maps.
+
   //- Footer Section
     include ../includes/footer.pug

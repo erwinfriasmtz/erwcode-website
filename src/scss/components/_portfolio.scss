@@ -1,0 +1,83 @@
+/* ********** Portfolio ********** */
+.portfolio {
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+  background: url(/src/images/projects.svg) no-repeat 0 50%;;
+
+
+  @include mq(m) { background-size: 30%;}
+  @include mq(l) { width: 100%; background-size: 15%;}
+  @include mq(xl) { margin: 3em auto;}
+
+  // portfolio__container
+  &__container {
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+
+    @include mq(m) { grid-template-columns: repeat(2,1fr); gap: 3em; }
+    @include mq(xl) { grid-template-columns: repeat(3,1fr); }
+  }
+
+  // .portfolio__image
+  &__image {
+    height: 400px;
+    box-shadow:  0 10px 30px rgba(0,0,0,0.5);
+    transition: 4s;
+
+    &:hover { background-position: bottom;}
+
+    &--atope {
+      background: url(/src/images/atope.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--gonzalez {
+      background: url(/src/images/gonzalez-asociados.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--sacamo {
+      background: url(/src/images/sacamo.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--llantas {
+      background: url(/src/images/llantas-rines.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--directorio {
+      background: url(/src/images/directorio-tehuacan.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  // .portfolio__title
+  &__title {
+    font-family: var(--ligth-font);
+    color: var(--primary-color);
+    margin: 2em auto 1em auto;
+
+    > span { font-family: var(--black-font);}
+  }
+
+  &__line {
+    width: 30%;
+    border: 2px solid var(--secondary-color);
+    margin: 0.5em auto;
+  }
+
+  &__description {
+    margin: 1em auto 2em auto;
+
+    @include mq(m) { margin: 0;}
+  }
+}

@@ -24,6 +24,7 @@ import svgLaptop      from './images/laptop.svg'
 import svgMouse       from './images/mouse.svg'
 import svgWorkflow    from './images/workflow.svg'
 import svgServicios   from './images/services.svg'
+import svgPortfolio   from './images/projects.svg'
 import svgMobile      from './images/mobile.svg'
 import svgRectangle   from './images/vectorRectangle.svg'
 import svgRectangleH  from './images/vectorRectangleH.svg'
@@ -110,6 +111,13 @@ import hotjar       from './images/hotjar.svg'
 import aws          from './images/aws.svg'
 import cloud        from './images/cloud.svg'
 import azure        from './images/azure.svg'
+
+import projectMilenium    from './images/milenium.jpg'
+import projectAtope       from './images/atope.jpg'
+import projectGonzalez    from './images/gonzalez-asociados.jpg'
+import projectSacamo      from './images/sacamo.jpg'
+import projectLlantas     from './images/llantas-rines.jpg'
+import projectDirectorio  from './images/directorio-tehuacan.jpg'
 
 
 /* ********** Videos ********** */
