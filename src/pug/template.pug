@@ -50,6 +50,17 @@ html(lang="es-MX")
     //- Google Tag Manager (noscript)
     noscript: iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-M2LFZ55', height='0', width='0', style='display:none;visibility:hidden')
 
+    //- Load Facebook SDK for JavaScript
+    #fb-root
+    //- Your customer chat code
+    .fb-customerchat(
+      attribution='setup_tool',
+      page_id='355409281675300',
+      theme_color='#0084ff',
+      logged_in_greeting='¡Hola! Escríbeme todas tus dudas',
+      logged_out_greeting='¡Hola! Escríbeme todas tus dudas'
+    )
+
     //- Menu Section
     include includes/menu.pug
 

@@ -127,7 +127,9 @@ import sketching  from './media/sketching.mp4'
 
 /* ********** JavaScript ********** */
 import { activeMenu } from './js/menu'
+import { messengerChat } from './js/messenger'
 import { writterEffect } from './js/writerEffect'
 
 activeMenu()
+messengerChat()
 writterEffect()
