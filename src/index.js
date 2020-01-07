@@ -129,7 +129,23 @@ import sketching  from './media/sketching.mp4'
 import { activeMenu } from './js/menu'
 import { messengerChat } from './js/messenger'
 import { writterEffect } from './js/writerEffect'
+import { sliderComments } from './js/comments'
 
 activeMenu()
 messengerChat()
-writterEffect()
+
+let page = location.pathname;
+
+switch(page) {
+  case '/':
+    sliderComments();
+    break;
+
+  case '/servicios.html':
+    writterEffect();
+    sliderComments();
+    break;
+
+  default:
+    console.log('Tecnologías de la Información & Marketing Digital');
+}
