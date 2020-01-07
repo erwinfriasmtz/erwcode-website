@@ -112,13 +112,14 @@ import aws          from './images/aws.svg'
 import cloud        from './images/cloud.svg'
 import azure        from './images/azure.svg'
 
-import projectMilenium    from './images/milenium.jpg'
-import projectAtope       from './images/atope.jpg'
-import projectGonzalez    from './images/gonzalez-asociados.jpg'
-import projectSacamo      from './images/sacamo.jpg'
-import projectTepole      from './images/tepole.jpg'
-import projectLlantas     from './images/llantas-rines.jpg'
-import projectDirectorio  from './images/directorio-tehuacan.jpg'
+import projectMilenium        from './images/milenium.jpg'
+import projectMileniumOnline  from './images/milenium-online.jpg'
+import projectAtope           from './images/atope.jpg'
+import projectGonzalez        from './images/gonzalez-asociados.jpg'
+import projectSacamo          from './images/sacamo.jpg'
+import projectTepole          from './images/tepole.jpg'
+import projectLlantas         from './images/llantas-rines.jpg'
+import projectDirectorio      from './images/directorio-tehuacan.jpg'
 
 
 /* ********** Videos ********** */

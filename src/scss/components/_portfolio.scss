@@ -29,6 +29,18 @@
 
     &:hover { background-position: bottom;}
 
+    &--monline {
+      background: url(/src/images/milenium-online.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--milenium {
+      background: url(/src/images/milenium.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
     &--atope {
       background: url(/src/images/atope.jpg);
       background-size: cover;
