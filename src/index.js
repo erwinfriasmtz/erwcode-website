@@ -121,6 +121,8 @@ import projectTepole          from './images/tepole.jpg'
 import projectLlantas         from './images/llantas-rines.jpg'
 import projectDirectorio      from './images/directorio-tehuacan.jpg'
 
+import ogImage from './images/erwcode.jpg'
+
 
 /* ********** Videos ********** */
 import sketching  from './media/sketching.mp4'
