@@ -1,7 +1,8 @@
 const path                  = require('path'),
       HtmlWebpackPlugin     = require('html-webpack-plugin'),
       MiniCssExtractPlugin  = require('mini-css-extract-plugin'),
-      autoprefixer          = require('autoprefixer');
+      autoprefixer          = require('autoprefixer'),
+      CopyPlugin            = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -82,6 +83,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
-    })
+    }),
+    new CopyPlugin([
+      { from: './src/.htaccess', to: './'},
+    ]),
   ]
 };
