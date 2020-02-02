@@ -29,6 +29,18 @@
 
     &:hover { background-position: bottom;}
 
+    &--oportunosmx {
+      background: url(/src/images/oportunosmx.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--oportunos {
+      background: url(/src/images/oportunos.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
     &--monline {
       background: url(/src/images/milenium-online.jpg);
       background-size: cover;

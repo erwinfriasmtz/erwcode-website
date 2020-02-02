@@ -50,6 +50,7 @@ import seo          from './images/posicionamiento-seo.svg'
 
 import arrow  from './images/right-arrow.svg'
 
+import logoOportunos   from './images/logo-oportunos.svg'
 import logoMilenium    from './images/logo-unimilenium.svg'
 import logoTusOfertias from './images/logo-tusOfertias.svg'
 import logoNursely     from './images/logo-nursely.svg'
@@ -112,6 +113,8 @@ import aws          from './images/aws.svg'
 import cloud        from './images/cloud.svg'
 import azure        from './images/azure.svg'
 
+import projectOportunosMx     from './images/oportunosmx.jpg'
+import projectOportunos       from './images/oportunos.jpg'
 import projectMilenium        from './images/milenium.jpg'
 import projectMileniumOnline  from './images/milenium-online.jpg'
 import projectAtope           from './images/atope.jpg'
