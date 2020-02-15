@@ -2,6 +2,8 @@
 
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
+[![GitHub contributors][contributors]][contributors-url]
+![GitHub package.json version][version-url]
 
 Este repositorio contiene el código Front-End & Back-End necesario para el desarrollo del sitio web [erwcode.com](https://erwcode.com).
 
@@ -32,3 +34,8 @@ Made with 💖 by [ErwCode Technologies](https://erwcode.com/).
 
 [node]: https://img.shields.io/node/v/webpack.svg
 [node-url]: https://nodejs.org
+
+[contributors]: https://img.shields.io/github/contributors/erwinfriasmtz/erwcode__website.svg?color=orange
+[contributors-url]: https://github.com/erwinfriasmtz/erwcode__website/graphs/contributors
+
+[version-url]: https://img.shields.io/github/package-json/v/erwinfriasmtz/erwcode__website.svg?color=red
