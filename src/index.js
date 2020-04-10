@@ -4,11 +4,6 @@ import regularFont from './fonts/Averta.woff'
 import boldFont from './fonts/Averta_Bold.woff'
 import blackFont from './fonts/Averta_Black.woff'
 
-
-/* ********** CSS ********** */
-import scss from './scss/main.scss'
-
-
 /* ********** Images ********** */
 import favicon      from './images/favicon.png'
 import logoHorizont from './images/imagotipo-horizont-white.svg'
@@ -128,10 +123,17 @@ import ogImage from './images/erwcode.jpg'
 
 
 /* ********** Videos ********** */
+
 import sketching  from './media/sketching.mp4'
 
 
+/* ********** CSS ********** */
+
+import scss from './scss/main.scss'
+
+
 /* ********** JavaScript ********** */
+
 import { activeMenu } from './js/menu'
 import { messengerChat } from './js/messenger'
 import { writterEffect } from './js/writerEffect'

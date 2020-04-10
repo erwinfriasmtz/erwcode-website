@@ -9,7 +9,7 @@ Este repositorio contiene el código Front-End & Back-End necesario para el desa
 
 ![FontCDN screenshot](./src/images/mockup.png)
 
-> Flujo de trabajo utilizando Webpack 4, PUG, SCSS, SMACSS & ITCSS, BEM, PostCSS, Babel, Composer, PHP Slim, Medoo & MariaDB.
+> Flujo de trabajo utilizando Webpack, PUG, SASS, SMACSS, BEM, PostCSS, Babel, Composer, PHP Slim, Medoo & MariaDB.
 
 ## Equipo de Desarrollo
 
@@ -20,7 +20,7 @@ Erwin Alan Frías Martínez | Front-End Developer & UI/UX Designer
 
 Marcos Felipe Frías Martínez | Full-Stack Developer & DBA
 
-* [LinkedIn](http://linkedin.com/in/marcosfriasmtz)
+* [LinkedIn](http://linkedin.com/in/marcosfrias/)
 * [GitHub](https://github.com/Marcos-Frias)
 
 
