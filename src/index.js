@@ -45,16 +45,6 @@ import seo          from './images/posicionamiento-seo.svg'
 
 import arrow  from './images/right-arrow.svg'
 
-import logoOportunos   from './images/logo-oportunos.svg'
-import logoMilenium    from './images/logo-unimilenium.svg'
-import logoTusOfertias from './images/logo-tusOfertias.svg'
-import logoNursely     from './images/logo-nursely.svg'
-import logoSacamo      from './images/logo-sacamo.svg'
-import logoAtope       from './images/logo-atope.svg'
-import logoGonzalez    from './images/logo-gonzalez.svg'
-import logoDt          from './images/logo-dt.svg'
-import logoTepole      from './images/logo-tepole.svg'
-
 import continents from './images/continentes.svg'
 import facebook   from './images/facebook.svg'
 import instagram  from './images/instagram.svg'
@@ -106,18 +96,28 @@ import analytics    from './images/analytics.svg'
 import hotjar       from './images/hotjar.svg'
 import aws          from './images/aws.svg'
 import cloud        from './images/cloud.svg'
-import azure        from './images/azure.svg'
 
-import projectOportunosMx     from './images/oportunosmx.jpg'
-import projectOportunos       from './images/oportunos.jpg'
+import projectDirectorio      from './images/directorio-tehuacan.jpg'
+import projectLlantas         from './images/llantas-rines.jpg'
+import projectTepole          from './images/tepole.jpg'
+import projectSacamo          from './images/sacamo.jpg'
+import projectGonzalez        from './images/gonzalez-asociados.jpg'
+import projectAtope           from './images/atope.jpg'
 import projectMilenium        from './images/milenium.jpg'
 import projectMileniumOnline  from './images/milenium-online.jpg'
-import projectAtope           from './images/atope.jpg'
-import projectGonzalez        from './images/gonzalez-asociados.jpg'
-import projectSacamo          from './images/sacamo.jpg'
-import projectTepole          from './images/tepole.jpg'
-import projectLlantas         from './images/llantas-rines.jpg'
-import projectDirectorio      from './images/directorio-tehuacan.jpg'
+import projectOportunos       from './images/oportunos.jpg'
+import projectOportunosMx     from './images/oportunosmx.jpg'
+
+import logoDt          from './images/logo-dt.svg'
+import logoTepole      from './images/logo-tepole.svg'
+import logoGonzalez    from './images/logo-gonzalez.svg'
+import logoAtope       from './images/logo-atope.svg'
+import logoTusOfertias from './images/logo-tusOfertias.svg'
+import logoSacamo      from './images/logo-sacamo.svg'
+import logoNursely     from './images/logo-nursely.svg'
+import logoMilenium    from './images/logo-unimilenium.svg'
+import logoOportunos   from './images/logo-oportunos.svg'
+import logoJCDecaux    from './images/logo-jcdecaux.svg'
 
 import ogImage from './images/erwcode.jpg'
 
@@ -142,20 +142,11 @@ import { sliderComments } from './js/comments'
 activeMenu()
 messengerChat()
 
-let page = location.pathname;
 
-switch(page) {
-  case '/':
-    sliderComments();
-    break;
-
-  case '/servicios.html':
-    writterEffect();
-    sliderComments();
-    break;
-
-  default:
-    console.log('Tecnologías de la Información & Marketing Digital');
+if(document.getElementById('comments')) {
+  sliderComments();
+} else if (document.getElementById('writterEfect')) {
+  writterEffect();
 }
 
 // Scroll toggler

@@ -2,13 +2,30 @@
 .customer {
   width: 80%;
   margin: 2em auto;
+  text-align: center;
 
-  @include mq(xl) { margin: 1em auto; }
+  // .customer__title
+  &__title {
+    text-transform: uppercase;
+    font-family: var(--ligth-font);
+    font-size: 0.7em;
+  }
+
+  // .customer__subtitle
+  &__subtitle {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-family: var(--bold-font);
+    font-size: 1.5em;
+
+    @include mq(l) { font-size: 2em;}
+  }
 
   // .customer__container
   &__container {
+    margin-top: 1em;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
 
