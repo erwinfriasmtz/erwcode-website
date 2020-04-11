@@ -32,9 +32,9 @@
     margin: 2em auto;
     width: 80%;
 
-    &:nth-child(3n+1) { background-color: var(--secondary-color); }
-    &:nth-child(3n+2) { background-color: var(--tertiary-color); }
-    &:nth-child(3n) { background-color: var(--primary-color); }
+    &:nth-child(3n+1) { background-color: var(--quaternary-color); }
+    &:nth-child(3n+2) { background-color: var(--quinary-color); }
+    &:nth-child(3n) { background-color: var(--senary-color); }
 
     @include mq(m) {
       margin: 2em auto 0 auto;
@@ -57,7 +57,7 @@
   &__name {
     padding: 3.5em 0 2em;
     text-transform: uppercase;
-    font-family: var(--ligth-font);
+    font-family: var(--regular-font);
     font-size: 0.8em;
     width: 80%;
     margin: auto;
@@ -66,7 +66,7 @@
   // .main-service__all
   &__all {
     display: block;
-    background-color: #fd385b;
+    background-color: #da2e4c;
     color: var(--text-color-white);
     border-radius: 3px;
     width: 90%;
@@ -75,7 +75,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #da2e4c;
+      background-color: #fd385b;
     }
 
     @include mq(m) { margin: 3em auto; width: 50%; }

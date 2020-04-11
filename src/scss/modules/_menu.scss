@@ -54,7 +54,7 @@
     position: relative;
     width: 50%;
     height: 3px;
-    background: var(--quaternary-color);
+    background: var(--text-color-white);
     transition: all 0.4s ease;
 
     display: flex;
@@ -183,7 +183,7 @@
 
       &:hover { background-color: var(--secondary-color); }
 
-      @include mq(m) { margin-top: 0; padding: 0 .5em; border-radius: 3px; }
+      @include mq(m) { margin-top: 0; padding: .3em .5em; border-radius: 3px; }
     }
 
     @include mq(m) { padding: 0; margin-right: 1em; margin-bottom: .5em; }
