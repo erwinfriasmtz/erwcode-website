@@ -1,49 +1,49 @@
 /* ********** Menu ********** */
-.main-header {
-  position: sticky;
+.header {
+  position: fixed;
   top: 0;
-  z-index: 100;
-}
+  width: 100vw;
+  background-color: var(--primary-color);
+  z-index: var(--z-middle);
+  transition: top 0.5s;
 
-.logo, .logo-menu {
-  position: absolute;
-  display: block;
-  width: 200px;
-  padding: 1em 0 1em 1em;
-  object-fit: contain;
-  z-index: 100;
+  &__container {
+    height: 70px;
 
-  @include mq(m) {
-    display: none;
-  }
-
-  &-menu {
-    display: none;
-    @include mq(m){
-      display: block;
-      position: relative;
-      width: 150px;
-      padding: 1em 0;
-      object-fit: contain;
-    }
-
-    @include mq(l) {
-      width: 200px;
+    @include mq(m) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
     }
   }
+
+  &__link {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    z-index: var(--z-up);
+
+    @include mq(m) { position: relative; }
+  }
+
+  // header__logo
+  &__logo {
+    width: 200px;
+    padding: .6em 0 .5em 1em;
+
+    @include mq(m) { padding: 1em 0; }
+  }
 }
 
-/* ********** Hamburger Menu ********** */
 .hamburger {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
-  width: 45px;
-  height: 45px;
+  z-index: var(--z-up);
+  width: 70px;
+  height: 70px;
   padding: 0.5rem;
-  margin: 15px;
-  border-radius: 3px;
   background: var(--secondary-color);
 
   display: flex;
@@ -52,7 +52,7 @@
 
   > span {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 3px;
     background: var(--quaternary-color);
     transition: all 0.4s ease;
@@ -65,7 +65,7 @@
       content: '';
       position: absolute;
       z-index: 1;
-      top: -10px;
+      top: -7px;
       width: 100%;
       height: 3px;
       background: inherit;
@@ -75,11 +75,11 @@
       content: '';
       position: absolute;
       z-index: 1;
-      top: -10px;
+      top: -7px;
       width: 100%;
       height: 3px;
       background: inherit;
-      top: 10px;
+      top: 7px;
     }
   }
 
@@ -88,18 +88,15 @@
   }
 }
 
-
-/* ********** Hamburger Animation ********** */
 .toggler {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 15;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  z-index: var(--z-above);
+  width: 70px;
+  height: 70px;
   opacity: 0;
+  cursor: pointer;
 
   &:checked {
     + .hamburger > span {
@@ -119,9 +116,7 @@
   }
 }
 
-
-/* ********** Show Menu ********** */
-.toggler:checked ~ .open-menu {
+.toggler:checked ~ .menu {
   left: 0;
 
   > .animation {
@@ -131,90 +126,81 @@
 }
 
 
-.open-menu {
+.menu {
   position: absolute;
-  background-color: rgba(#000, 0.9);
+  top: 0;
+  background-color: rgba(#000, 0.95);
   width: 100vw;
   height: 100vh;
   left: -100vh;
-  z-index: 5;
   transition: all .5s;
 
+  display: flex;
+  justify-content: flex-start;
+
   @include mq(m) {
-    top: 0;
-    position: sticky;
-    width: 100vw;
-    height: auto;
+    position: relative;
+    left: 0;
     background-color: var(--primary-color);
-    z-index: 10;
+    height: auto;
+    width: auto;
+
+    justify-content: flex-end;
   }
 
-  // open-menu__container
+  // menu__container
   &__container {
+    width: 80%;
+    margin: 30% auto 0 auto;
+    font-size: 1.2em;
+
     @include mq(m) {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-    }
-  }
-}
-
-.nav-menu {
-  transform: translateY(25%);
-  @include mq(m) {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  // nav-menu__item
-  &__item {
-    width: 60%;
-    margin: auto;
-
-    @include mq(m) { width: auto;}
-  }
-
-  // nav-menu__link
-  &__link {
-    display: block;
-    padding: 0.5em 1em;
-    color: var(--text-color-white);
-    font: {
-      family: var(--regular-font);
-      size: 1.4em;
-    }
-    text-align: center;
-
-    @include mq(m) {
+      width: auto;
+      margin: 0;
       font-size: 0.8em;
-      padding-bottom: 3em;
-      color: var(--text-color-white);
-
-      &:hover { color: var(--secondary-color); }
     }
 
-    @include mq(l) { font-size: 1em; }
+    @include mq(l) { font-size:  1em; }
+  }
 
-    &--login {
+  // menu__item
+  &__item {
+    padding: 0.5em 0;
+
+    &:last-child {
+      text-align: center;
       background-color: var(--tertiary-color);
-      border-radius: 3px;
-      padding: 0.3em;
+      margin-top: 1em;
 
-      &:hover {
-        background-color: var(--secondary-color);
+      > a {
+        font-family: var(--bold-font);
         color: var(--text-color-white);
       }
 
-      @include mq(m) {
-        margin-bottom: 2.5em;
-        padding: 0.2em 0.3em;
-      }
+      &:hover { background-color: var(--secondary-color); }
+
+      @include mq(m) { margin-top: 0; padding: 0 .5em; border-radius: 3px; }
     }
+
+    @include mq(m) { padding: 0; margin-right: 1em; margin-bottom: .5em; }
+    @include mq(l) { margin-right: 1.2em; }
+  }
+
+  // menu__link
+  &__link {
+    display: block;
+    color: var(--text-color-white);
+    font-family: var(--regular-font);
+
+    &:hover { color: var(--secondary-color); }
   }
 }
+
+
 
 
 /* ********** Active JS ********** */

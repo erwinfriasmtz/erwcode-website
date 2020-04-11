@@ -1,23 +1,21 @@
-a(href="/"): img.logo(src="./assets/images/imagotipo-horizont-white.svg", alt="ErwCode Technologies")
-header.main-header
-  input.toggler(type="checkbox")
-  .hamburger: span
-  .open-menu
-    .open-menu__container.l-container
-      a(href="/"): img.logo-menu(src="./assets/images/imagotipo-horizont-white.svg", alt="ErwCode Technologies")
-      nav.nav-container#menu
-        ul.nav-menu
-          li.nav-menu__item
-            a.nav-menu__link(href="/") Inicio
-          li.nav-menu__item
-            a.nav-menu__link(href="nosotros.html") Nosotros
-          li.nav-menu__item
-            a.nav-menu__link(href="servicios.html") Servicios
-          li.nav-menu__item
-            a.nav-menu__link(href="portafolio.html") Portafolio
-          li.nav-menu__item
-            a.nav-menu__link(href="#") Blog
-          li.nav-menu__item
-            a.nav-menu__link(href="#") Contacto
-          li.nav-menu__item
-            a.nav-menu__link.nav-menu__link--login(href="#") Iniciar sesión
+header.header#header
+  .header__container.l-container
+    a(class="header__link", href="/"): img(class="header__logo", src="./assets/images/imagotipo-horizont-white.svg", alt="ErwCode Technologies")
+    input(class="toggler", type="checkbox")
+    .hamburger: span
+    nav.menu#menu
+      ul.menu__container
+        li.menu__item
+          a.menu__link(href="/") Inicio
+        li.menu__item
+          a.menu__link(href="nosotros.html") Nosotros
+        li.menu__item
+          a.menu__link(href="servicios.html") Servicios
+        li.menu__item
+          a.menu__link(href="portafolio.html") Portafolio
+        li.menu__item
+          a.menu__link(href="#") Blog
+        li.menu__item
+          a.menu__link(href="#") Contacto
+        li.menu__item
+          a.menu__link(href="#") Inicia Sesión

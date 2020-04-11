@@ -157,3 +157,18 @@ switch(page) {
   default:
     console.log('Tecnologías de la Información & Marketing Digital');
 }
+
+// Scroll toggler
+let lastScrollTop = 0,
+    header = document.getElementById('header');
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollTop > lastScrollTop) {
+    header.style.top="-90px";
+  } else {
+    header.style.top="0px"
+  }
+  lastScrollTop = scrollTop
+})
+

@@ -20,7 +20,6 @@ html(lang="es-MX")
     else
       title= `${pageTitle} | ${siteName}`
     meta(name="description" content= metaDescription)
-    meta(name="keywords" content= metaKeywords)
     meta(name="author" content="ErwCode Technologies")
     meta(name="robots" content="index, follow")
     meta(name="theme-color" content="#0C3455")
@@ -48,7 +47,13 @@ html(lang="es-MX")
 
   body
     //- Google Tag Manager (noscript)
-    noscript: iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-M2LFZ55', height='0', width='0', style='display:none;visibility:hidden')
+    noscript: iframe(title='Google Tag Manager', src='https://www.googletagmanager.com/ns.html?id=GTM-M2LFZ55', height='0', width='0', style='display:none;visibility:hidden')
+
+    //- Menu Section
+    include includes/menu.pug
+
+    //- Body Section
+    block body
 
     //- Load Facebook SDK for JavaScript
     #fb-root
@@ -60,11 +65,6 @@ html(lang="es-MX")
       logged_in_greeting='¡Hola! Escríbeme todas tus dudas',
       logged_out_greeting='¡Hola! Escríbeme todas tus dudas'
     )
-
-    //- Menu Section
-    include includes/menu.pug
-
-    block body
 
     //- Footer Section
     include includes/footer.pug

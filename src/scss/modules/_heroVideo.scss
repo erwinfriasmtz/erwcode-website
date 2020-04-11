@@ -35,9 +35,6 @@
     background-position: 0% 90%, 40% 0%;
     width: 100%;
     height: 100%;
-
-    @include mq(m) { height: calc(100vh - 70.2px); }
-    @include mq(l) { height: calc(100vh - 82.94px); }
   }
 
   // .hero-video__title

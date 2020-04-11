@@ -28,11 +28,8 @@
 
     @include mq(m) {
       width: 100%;
-      height: calc(100vh - 70.2px);
       grid-template-columns: repeat(2,1fr);
     }
-
-    @include mq(l) { height: calc(100vh - 82.94px); }
   }
 
 
@@ -42,8 +39,6 @@
       display: none;
       @include mq(m) { display: block; }
     }
-
-    @include mq(m) { padding-bottom: 3em;}
   }
 
 
@@ -123,7 +118,7 @@
     animation: jump 1.5s ease 0s infinite normal ;
 
     @include mq(m) { bottom: 0; width: 15%;}
-    @include mq(m) { bottom: 0; width: 6%;}
+    @include mq(l) { bottom: 0; width: 5%;}
   }
 }
 

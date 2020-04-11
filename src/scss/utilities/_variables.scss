@@ -16,7 +16,10 @@
   --text-color-black: var(--quinary-color);
   --text-color-white: var(--quaternary-color);
 
-  --max-width: 1024px;
+  --z-down:   25;
+  --z-middle: 50;
+  --z-up:     75;
+  --z-above:  100;
 }
 
 /* ********** Breakpoints ********** */
