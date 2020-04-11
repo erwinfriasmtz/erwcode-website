@@ -86,6 +86,7 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: './src/.htaccess', to: './'},
+      { from: './src/googlecb5100a3fdb1ed75.html', to:'./'}
     ]),
   ]
 };
