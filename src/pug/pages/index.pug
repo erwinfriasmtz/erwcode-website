@@ -19,27 +19,27 @@ block body
           | Transforma tu empresa en algo extraordinario 🔥, en #[span ErwCode] contamos con el #[span expertise] que necesita
           | tu negocio para llegar al siguiente nivel, implementa #[span tecnologías de vanguardia] y sé un referente de tu área.
           | ¡El momento es ahora! 🎯
-        a.hero-image__btn(href="#") Iniciar Proyecto
+        a(class="hero-image__btn", href="#") Cotizar Proyecto
       .hero-image__item
-        img.hero-image__illustration(src="./assets/images/programmer.svg", alt="Programando en ErwCode")
+        img(class="hero-image__illustration", loading="lazy", src="./assets/images/programmer.svg", alt="Programando en ErwCode")
     .mouse-scroll.l-container
-      img.mouse-scroll__icon(src="./assets/images/mouse.svg", alt="Mouse Scroll")
+      img(class="mouse-scroll__icon", loading="lazy", src="./assets/images/mouse.svg", alt="Mouse Scroll")
 
   //- Workflow Section
   section.workflow.l-container
     h2.workflow__title Así es como trabajamos
-    h3.workflow__subtitle Tres simples pasos para comenzar un proyecto
+    span.workflow__subtitle Tres simples pasos para comenzar un proyecto
     .workflow__container
       .workflow__item
         h3.workflow__step Research Project
-        p.workflow__description Trabajamos para obtener toda la información que se necesita para poder proyectar tu idea.
+        p.workflow__description Obtenemos con tu ayuda toda la información que se necesita para poder materializar tu idea de negocio.
       .workflow__item
         h3.workflow__step Targeting
         p.workflow__description Analizamos e interpretamos los requerimientos de tu proyecto para implementar la correcta metodología.
       .workflow__item
-        h3.workflow__step Implementation
-        p.workflow__description Excelencia en todo momento, cada proyecto es desarrollado y monitoreado para tener éxito.
-    img.workflow__image(src="./assets/images/mobile.svg", alt="Flujo de Trabajo en ErwCode")
+        h3.workflow__step Deployment
+        p.workflow__description Cada requerimiento es desarrollado y testeado para entregarte un proyecto que conecte con tu comunidad.
+    img(class="workflow__image", loading="lazy", src="./assets/images/mobile.svg", alt="Flujo de Trabajo en ErwCode")
 
   //- Customer Comments Section
   include ../includes/comments.pug
@@ -50,25 +50,25 @@ block body
     h3.workflow__subtitle Tecnologías de la Información y Marketing Digital para tu empresa
     .main-service__container.l-container
       article.main-service__item
-        img.main-service__icon(src="./assets/images/desarrollo-web.svg", alt="Desarrollo Web")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/desarrollo-web.svg", alt="Desarrollo Web")
         a.main-service__link(href="#"): h3.main-service__name Desarrollo Web
       article.main-service__item
-        img.main-service__icon(src="./assets/images/community-manager.svg", alt="Community Manager")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/community-manager.svg", alt="Community Manager")
         a.main-service__link(href="#"): h3.main-service__name Community Manager
       article.main-service__item
-        img.main-service__icon(src="./assets/images/desarrollo-apps-web.svg", alt="Desarrollo de Aplicaciones Web")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/desarrollo-apps-web.svg", alt="Desarrollo de Aplicaciones Web")
         a.main-service__link(href="#"): h3.main-service__name Desarrollo de Aplicacoines Web
       article.main-service__item
-        img.main-service__icon(src="./assets/images/ui-ux.svg", alt="Diseño UI/UX")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/ui-ux.svg", alt="Diseño UI/UX")
         a.main-service__link(href="#"): h3.main-service__name Diseño UI/UX
       article.main-service__item
-        img.main-service__icon(src="./assets/images/auditoria-seo.svg", alt="Auditoría SEO")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/auditoria-seo.svg", alt="Auditoría SEO")
         a.main-service__link(href="#"): h3.main-service__name Auditoría SEO
       article.main-service__item
-        img.main-service__icon(src="./assets/images/posicionamiento-seo.svg", alt="Posicionamiento SEO")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/posicionamiento-seo.svg", alt="Posicionamiento SEO")
         a.main-service__link(href="#"): h3.main-service__name Posicionamiento SEO
       article.main-service__item
-        img.main-service__icon(src="./assets/images/landing-page.svg", alt="Landing Page")
+        img(class="main-service__icon", loading="lazy", src="./assets/images/landing-page.svg", alt="Landing Page")
         a.main-service__link(href="#"): h3.main-service__name Landing Page
     a.main-service__all(href="servicios.html") Mostrar más
 
