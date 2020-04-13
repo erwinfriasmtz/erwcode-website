@@ -143,11 +143,14 @@ activeMenu()
 messengerChat()
 
 
+
 if(document.getElementById('comments')) {
-  sliderComments();
-} else if (document.getElementById('writterEfect')) {
-  writterEffect();
+  sliderComments()
+} else {
+  console.log("ErwCode Technologies")
 }
+
+writterEffect()
 
 // Scroll toggler
 let lastScrollTop = 0,

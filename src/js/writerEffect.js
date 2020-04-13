@@ -54,8 +54,11 @@ export const writterEffect = () => {
   }
 
 
-  // Init On DOM Load
-  document.addEventListener('DOMContentLoaded', init);
+  if(document.getElementById('txt-type')) {
+    // Init On DOM Load
+    document.addEventListener('DOMContentLoaded', init);
+  }
+
 
   // Init App
   function init() {
