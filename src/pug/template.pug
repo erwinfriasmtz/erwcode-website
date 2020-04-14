@@ -11,12 +11,12 @@ block variables
 doctype html
 html(lang="es-MX")
   head
+    //- Meta Tags
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     if pageTitle === 'Home'
       title= `${siteName} | Tecnologías de la Información & Marketing Digital`
-      link(rel="canonical", href="https://erwcode.com")
     else
       title= `${pageTitle} | ${siteName}`
     meta(name="description" content= metaDescription)
@@ -43,6 +43,7 @@ html(lang="es-MX")
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-M2LFZ55');
+    //- Links
     link(rel="shortcut icon" href="./assets/images/favicon.png")
 
   body

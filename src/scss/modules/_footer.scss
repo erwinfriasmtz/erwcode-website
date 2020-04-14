@@ -72,9 +72,10 @@
   &__contactLink {
     display: block;
     color: var(--text-color-white);
+    margin: 0.5em 0;
     cursor: pointer;
 
-    &:hover { color: var(--senary-color); }
+    &:hover { color: var(--secondary-color); }
   }
 
   // footer__title
