@@ -24,7 +24,6 @@
 @import 'modules/contactSms';
 @import 'modules/form';
 @import 'modules/customer';
-@import 'modules/footer';
 @import 'modules/heroVideo';
 @import 'modules/ourStory';
 @import 'modules/expertise';
@@ -32,7 +31,8 @@
 @import 'modules/values';
 @import 'modules/skills';
 @import 'modules/portfolio';
-
+@import 'modules/blog';
+@import 'modules/footer';
 
 /*  State Rules ================================= */
 @import 'states/is-visible';

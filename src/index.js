@@ -25,6 +25,8 @@ import svgRectangle   from './images/vectorRectangle.svg'
 import svgRectangleH  from './images/vectorRectangleH.svg'
 import svgSplash      from './images/vectorSplash.svg'
 import svgComment     from './images/icon-comment.svg'
+import svgPosting     from './images/posting.svg'
+import svgBlog        from './images/blog.svg'
 
 import auditoria    from './images/auditoria-seo.svg'
 import branding     from './images/branding-corporativo.svg'
@@ -119,7 +121,9 @@ import logoMilenium    from './images/logo-unimilenium.svg'
 import logoOportunos   from './images/logo-oportunos.svg'
 import logoJCDecaux    from './images/logo-jcdecaux.svg'
 
-import ogImage from './images/erwcode.jpg'
+import ogImage    from './images/erwcode.jpg'
+import post       from './images/post.jpg'
+import arrowBlog  from './images/arrow.svg'
 
 
 /* ********** Videos ********** */
