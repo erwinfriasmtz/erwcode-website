@@ -35,6 +35,11 @@
   &__message {
     font-family: var(--ligth-font);
     font-weight: 100;
+
+    span {
+      font-family: var(--black-font);
+      color: var(--secondary-color);
+    }
   }
 
   // .newsletter-form
