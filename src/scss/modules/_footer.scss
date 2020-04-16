@@ -65,7 +65,7 @@
 
     &:nth-child(1n)::before { content: '🌎 ';}
 
-    @include mq(m) { margin-top: 5.5em; }
+    @include mq(m) { margin-top: 4.8em; }
   }
 
   // footer__contactLink

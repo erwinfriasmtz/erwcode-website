@@ -3,11 +3,11 @@
   width: 80%;
   margin: 2em auto;
   text-align: center;
-  background: url(/src/images/projects.svg) no-repeat 0 50%;;
+  background: url(/src/images/projects.svg) no-repeat 0 50%;
 
 
-  @include mq(m) { background-size: 30%;}
-  @include mq(l) { width: 100%; background-size: 15%;}
+  @include mq(m) { background-size: 30%; background-position: 100% 100%; }
+  @include mq(l) { width: 100%; background-size: 15%; }
   @include mq(xl) { margin: 3em auto;}
 
   // portfolio__container

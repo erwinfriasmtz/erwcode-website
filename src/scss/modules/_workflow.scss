@@ -6,8 +6,8 @@
   background: url(/src/images/workflow.svg) no-repeat;
 
   @include mq(m) { background-size: 20%;}
-  @include mq(l) { width: 100%; background-size: 15%;}
-  @include mq(xl) { margin: 3em auto;}
+  @include mq(l) { width: 100%; background-size: 14%; }
+  @include mq(xl) { margin: 3em auto; }
 
   &__title {
     text-transform: uppercase;
