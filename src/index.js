@@ -25,6 +25,7 @@ import svgRectangle   from './images/vectorRectangle.svg'
 import svgRectangleH  from './images/vectorRectangleH.svg'
 import svgSplash      from './images/vectorSplash.svg'
 import svgComment     from './images/icon-comment.svg'
+import svgPosting     from './images/posting.svg'
 
 import auditoria    from './images/auditoria-seo.svg'
 import branding     from './images/branding-corporativo.svg'
