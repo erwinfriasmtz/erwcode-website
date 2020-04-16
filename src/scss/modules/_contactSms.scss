@@ -1,5 +1,5 @@
-/* ********** Newsletter ********** */
-.newsletter {
+/* ********** Contact SMS ********** */
+.sms {
   background: url(/src/images/vectorRectangleH.svg) no-repeat;
   background-position: 0% 60%;
   background-size: 90%;
@@ -11,7 +11,7 @@
   @include mq(l) { background-size: 40%;}
   @include mq(xl) { background-size: 30%;}
 
-  // .newsletter__container
+  // .sms__container
   &__container {
     width: 80%;
     margin: auto;
@@ -28,16 +28,21 @@
     @include mq(xl) { padding: 3em 0; }
   }
 
-  // .newsletter__item:nth-child(2)
+  // .sms__item:nth-child(2)
   &__item:nth-child(2) { justify-self: end; }
 
-  // .newsletter__message
+  // .sms__message
   &__message {
     font-family: var(--ligth-font);
     font-weight: 100;
+
+    span {
+      font-family: var(--black-font);
+      color: var(--secondary-color);
+    }
   }
 
-  // .newsletter-form
+  // .sms-form
   &-form {
     display: flex;
     flex-flow: column wrap;
@@ -49,14 +54,14 @@
       grid-template-columns: repeat(2,1fr);
       gap: 1em;
     }
-    // .newsletter-form__item
+    // .sms-form__item
     &__item {
       margin: 1em 0;
 
       &:nth-child(2) { display: flex;}
     }
 
-    // .newsletter-form__submit
+    // .sms-form__submit
     &__submit {
       background-color: var(--tertiary-color);
       padding: 0.9em;
