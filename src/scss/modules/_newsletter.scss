@@ -1,0 +1,68 @@
+/* ********** Contact newsletter ********** */
+.newsletter {
+  background: url(/src/images/vectorRectangleH.svg) no-repeat;
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  text-align: center;
+
+  @include mq(m) { background-size: 50%;}
+
+  // .newsletter__container
+  &__container {
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+  }
+
+  // .newsletter__message
+  &__message {
+    font-family: var(--ligth-font);
+    font-weight: 100;
+    font-size: 1.5em;
+
+    span {
+      font-family: var(--black-font);
+      color: var(--secondary-color);
+    }
+  }
+
+  // .newsletter-form
+  &-form {
+    margin-top: 1.5em;
+    text-align: left;
+
+    @include mq(m) {
+      width: 50%;
+      margin: 2em auto 0 auto;
+    }
+  }
+
+  &__input {
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--text-color-white);
+    border-bottom: solid 1px silver;
+    padding-left: 0;
+    margin-bottom: 1.5em;
+    outline: none;
+  }
+
+  &__submit {
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 40%;
+    margin: 1em auto 0 auto;
+    padding: .5em;
+    background-color: var(--tertiary-color);
+    color: var(--text-color-white);
+    font-family: var(--bold-font);
+    font-size: 1.1em;
+    cursor: pointer;
+
+    &:hover { background-color: var(--secondary-color); }
+  }
+}
+

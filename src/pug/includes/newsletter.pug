@@ -1,0 +1,14 @@
+article.newsletter
+  .newsletter__container.l-container
+    .newsletter__item
+      h3.newsletter__message Suscríbete a nuestro #[span Newsletter]
+    .newsletter__item
+      form.newsletter-form(action="#", method="POST")
+        .newsletter-form__item
+          label(class="form__label", for="newsletterName") Nombre:
+          input(class="form__input newsletter__input", id="newsletterName", type="text", name="text", required)
+        .newsletter-form__item
+          label(class="form__label", for="newsletterEmail") Correo electrónico:
+          input(class="form__input newsletter__input", id="newsletterEmail", type="email", name="email", required)
+        .newsletter-form__item
+          input(class="newsletter__submit", type="submit", value="Inscribirme")
