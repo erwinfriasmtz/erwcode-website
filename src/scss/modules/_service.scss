@@ -7,19 +7,18 @@
 
   @include mq(m) {
     margin: 3em auto;
-    background-position: 100% 0%;
-    background-size: 40%;
+    background-position: 100% 100%;
+    background-size: 20%;
   }
 
-  @include mq(l) { background-size: 22%; }
-  @include mq(xl) { background-size: 18%; }
+  @include mq(l) { background-size: 15%; }
 
   // .main-service__container
   &__container {
     color: var(--text-color-white);
 
     @include mq(m) {
-      margin-top: 2em;
+      margin-top: 1em;
       display: grid;
       grid-template-columns: repeat(3,1fr);
     }

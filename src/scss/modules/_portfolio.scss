@@ -6,13 +6,12 @@
   background: url(/src/images/projects.svg) no-repeat 0 50%;
 
 
-  @include mq(m) { background-size: 30%; background-position: 100% 100%; }
+  @include mq(m) { margin: 3em auto; background-size: 30%; background-position: 100% 100%; }
   @include mq(l) { width: 100%; background-size: 15%; }
-  @include mq(xl) { margin: 3em auto;}
 
   // portfolio__container
   &__container {
-    padding: 2em 0;
+    margin: 3em 0 2em 0;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
