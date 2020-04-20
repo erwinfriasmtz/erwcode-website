@@ -28,6 +28,7 @@ import svgComment     from './images/icon-comment.svg'
 import svgPosting     from './images/posting.svg'
 import svgBlog        from './images/blog.svg'
 import svgContact     from './images/contact.svg'
+import svgMap         from './images/map.svg'
 
 import auditoria    from './images/auditoria-seo.svg'
 import branding     from './images/branding-corporativo.svg'
