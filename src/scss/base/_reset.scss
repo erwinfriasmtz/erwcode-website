@@ -27,6 +27,13 @@ img {
   height: auto;
 }
 
+
+/* ********** Custom Scrollbar ********** */
+::placeholder {
+  color: #7f8c8d;
+}
+
+
 /* ********** Custom Scrollbar ********** */
 
 ::-webkit-scrollbar {
