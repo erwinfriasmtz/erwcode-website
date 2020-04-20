@@ -148,8 +148,6 @@ import { sliderComments } from './js/comments'
 activeMenu()
 messengerChat()
 
-
-
 if(document.getElementById('comments')) {
   sliderComments()
 } else {
