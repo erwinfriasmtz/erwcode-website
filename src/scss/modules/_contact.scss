@@ -1,8 +1,13 @@
 /* ********** Contact ********** */
 .contact {
   width: 100%;
-  background: url(/src/images/map.svg) no-repeat 50% 50%;
   padding: 3em 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-image: url('/src/images/map.svg');
 
   // contact__container
   &__container {
