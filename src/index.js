@@ -122,6 +122,7 @@ import logoNursely     from './images/logo-nursely.svg'
 import logoMilenium    from './images/logo-unimilenium.svg'
 import logoOportunos   from './images/logo-oportunos.svg'
 import logoJCDecaux    from './images/logo-jcdecaux.svg'
+import logoBTS         from './images/logo-bts.svg'
 
 import ogImage  from './images/erwcode.jpg'
 import post     from './images/post.jpg'
