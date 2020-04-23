@@ -3,7 +3,7 @@
   width: 80%;
   margin: 2em auto;
   text-align: center;
-  background: url(/src/images/skills.svg) no-repeat 0 50%;;
+  background: url('/assets/images/skills.svg') no-repeat 0 50%;;
 
 
   @include mq(m) { margin: 3em auto; background-size:30%; }

@@ -3,7 +3,7 @@
   width: 80%;
   margin: 2em auto;
   text-align: center;
-  background: url(/src/images/projects.svg) no-repeat 0 50%;
+  background: url('/assets/images/projects.svg') no-repeat 0 50%;
 
 
   @include mq(m) { margin: 3em auto; background-size: 30%; background-position: 100% 100%; }
@@ -29,61 +29,61 @@
     &:hover { background-position: bottom;}
 
     &--oportunosmx {
-      background: url(/src/images/oportunosmx.jpg);
+      background: url('/assets/images/oportunosmx.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--oportunos {
-      background: url(/src/images/oportunos.jpg);
+      background: url('/assets/images/oportunos.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--monline {
-      background: url(/src/images/milenium-online.jpg);
+      background: url('/assets/images/milenium-online.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--milenium {
-      background: url(/src/images/milenium.jpg);
+      background: url('/assets/images/milenium.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--atope {
-      background: url(/src/images/atope.jpg);
+      background: url('/assets/images/atope.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--gonzalez {
-      background: url(/src/images/gonzalez-asociados.jpg);
+      background: url('/assets/images/gonzalez-asociados.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--sacamo {
-      background: url(/src/images/sacamo.jpg);
+      background: url('/assets/images/sacamo.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--tepole {
-      background: url(/src/images/tepole.jpg);
+      background: url('/assets/images/tepole.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--llantas {
-      background: url(/src/images/llantas-rines.jpg);
+      background: url('/assets/images/llantas-rines.jpg');
       background-size: cover;
       background-position: top;
     }
 
     &--directorio {
-      background: url(/src/images/directorio-tehuacan.jpg);
+      background: url('/assets/images/directorio-tehuacan.jpg');
       background-size: cover;
       background-position: top;
     }

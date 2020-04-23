@@ -22,13 +22,13 @@
 
       &:nth-child(1) {
         grid-template-areas: "content photo";
-        background: url(/src/images/mission.svg) no-repeat;
+        background: url('/assets/images/mission.svg') no-repeat;
         background-size: 60%;
         background-position: 0 100%;
       }
       &:nth-child(2) {
         grid-template-areas: "photo content";
-        background: url(/src/images/vision.svg) no-repeat;
+        background: url(/assets/images/vision.svg) no-repeat;
         background-size: 50%;
         background-position: 100% 100%;
       }

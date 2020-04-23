@@ -12,9 +12,6 @@
     height: 100vh;
     overflow: hidden;
 
-    // @include mq(m) { height: calc(100vh - 70.2px); }
-    // @include mq(l) { height: calc(100vh - 82.94px); }
-
     > video {
       min-width: 100%;
       min-height: 100%;
@@ -29,7 +26,7 @@
   // .hero-video__overlay
   &__overlay {
     position: absolute;
-    background: url(/src/images/vectorCircle.svg), url(/src/images/vectorHorizont.svg);
+    background: url('/assets/images/vectorCircle.svg'), url('/assets/images/vectorHorizont.svg');
     background-color: rgba(#0C3455, 0.9);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 90%, 40% 0%;

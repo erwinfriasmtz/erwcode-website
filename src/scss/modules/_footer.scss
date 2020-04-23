@@ -7,7 +7,7 @@
 
   @include mq(m) {
     text-align: initial;
-    background-image: url(/src/images/continentes.svg);
+    background-image: url('/assets/images/continentes.svg');
     background-repeat: no-repeat;
     background-position: 50% 10%;
     background-size: 70%;

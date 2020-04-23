@@ -7,7 +7,7 @@
   // .hero-image__vector
   &__vector {
     position: absolute;
-    background: url(/src/images/vectorCircle.svg), url(/src/images/vectorHorizont.svg), url(/src/images/vectorVertical.svg);
+    background: url('/assets/images/vectorCircle.svg'), url('/assets/images/vectorHorizont.svg'), url('/assets/images/vectorVertical.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 70%, 40% 0%, 100% 70%;
     width: 100%;

@@ -1,6 +1,6 @@
 /* ********** Values ********** */
 .value {
-  background: url(/src/images/vectorCircle.svg) no-repeat, url(/src/images/vectorHorizont.svg) no-repeat;
+  background: url('/assets/images/vectorCircle.svg') no-repeat, url('/assets/images/vectorHorizont.svg') no-repeat;
   background-color: var(--primary-color);
   background-position: 0% 50%, 100% 50%;
   background-size: 20%, 90%;
