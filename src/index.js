@@ -4,6 +4,7 @@ import regularFont from './fonts/Averta.woff'
 import boldFont from './fonts/Averta_Bold.woff'
 import blackFont from './fonts/Averta_Black.woff'
 
+
 /* ********** Images ********** */
 import favicon      from './images/favicon.png'
 import logoHorizont from './images/imagotipo-horizont-white.svg'
@@ -127,20 +128,25 @@ import logoBTS         from './images/logo-bts.svg'
 import ogImage  from './images/erwcode.jpg'
 import post     from './images/post.jpg'
 
+import icon72PWA  from './images/icon-72.png'
+import icon96PWA  from './images/icon-96.png'
+import icon128PWA from './images/icon-128.png'
+import icon144PWA from './images/icon-144.png'
+import icon152PWA from './images/icon-152.png'
+import icon192PWA from './images/icon-192.png'
+import icon384PWA from './images/icon-384.png'
+import icon512PWA from './images/icon-512.png'
 
 
 /* ********** Videos ********** */
-
 import sketching  from './media/sketching.mp4'
 
 
 /* ********** CSS ********** */
-
 import scss from './scss/main.scss'
 
 
 /* ********** JavaScript ********** */
-
 import { activeMenu } from './js/menu'
 import { messengerChat } from './js/messenger'
 import { writterEffect } from './js/writerEffect'
@@ -158,8 +164,7 @@ if(document.getElementById('comments')) {
 writterEffect()
 
 // Scroll toggler
-let lastScrollTop = 0,
-    header = document.getElementById('header');
+let lastScrollTop = 0, header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -171,3 +176,13 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop
 })
 
+// Service Worker WorkBox
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+      console.log('SW registered: ', registration);
+    }).catch(registrationError => {
+      console.log('SW registration failed: ', registrationError);
+    });
+  });
+}

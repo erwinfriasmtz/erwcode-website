@@ -2,13 +2,14 @@ const path                  = require('path'),
       HtmlWebpackPlugin     = require('html-webpack-plugin'),
       MiniCssExtractPlugin  = require('mini-css-extract-plugin'),
       autoprefixer          = require('autoprefixer'),
-      CopyPlugin            = require('copy-webpack-plugin');
+      CopyPlugin            = require('copy-webpack-plugin'),
+      WorkboxPlugin         = require('workbox-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: './assets/js/[name].bundle.js'
+    filename: './assets/js/[name].js'
   },
   devtool: 'source-map',
   module: {
@@ -92,9 +93,16 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),
+    new WorkboxPlugin.GenerateSW({
+      // these options encourage the ServiceWorkers to get in there fast
+      // and not allow any straggling "old" SWs to hang around
+      clientsClaim: true,
+      skipWaiting: true,
+    }),
     new CopyPlugin([
       { from: './src/.htaccess', to: './'},
-      { from: './src/googlecb5100a3fdb1ed75.html', to:'./'}
+      { from: './src/googlecb5100a3fdb1ed75.html', to:'./'},
+      { from: './src/manifest.json', to:'./'}
     ]),
   ]
 };
