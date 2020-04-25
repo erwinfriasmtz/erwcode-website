@@ -147,42 +147,22 @@ import scss from './scss/main.scss'
 
 
 /* ********** JavaScript ********** */
-import { activeMenu } from './js/menu'
+import { menu } from './js/menu'
 import { messengerChat } from './js/messenger'
-import { writterEffect } from './js/writerEffect'
 import { sliderComments } from './js/comments'
+import { writterEffect } from './js/writerEffect'
+import { emailContact } from './js/email'
+import { serviceWorker } from './js/sw'
 
-activeMenu()
+menu()
 messengerChat()
+writterEffect()
+serviceWorker()
 
 if(document.getElementById('comments')) {
   sliderComments()
+} else  if(document.getElementById('contactForm')) {
+  emailContact()
 } else {
   console.log("ErwCode Technologies")
-}
-
-writterEffect()
-
-// Scroll toggler
-let lastScrollTop = 0, header = document.getElementById('header');
-
-window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if(scrollTop > lastScrollTop) {
-    header.style.top="-90px";
-  } else {
-    header.style.top="0px"
-  }
-  lastScrollTop = scrollTop
-})
-
-// Service Worker WorkBox
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js').then(registration => {
-      console.log('SW registered: ', registration);
-    }).catch(registrationError => {
-      console.log('SW registration failed: ', registrationError);
-    });
-  });
 }

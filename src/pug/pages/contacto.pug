@@ -25,7 +25,7 @@ block body
     .contact__container.l-container
       .contact__item
         h2.contact__message Llena el siguiente #[span Formulario]
-        form(class="contact-form", id="contactForm", action="#", method="POST")
+        form(class="contact-form", id="contactForm")
           .contact-form__item
             input(class="form__input contact__input", id="contactName", type="text", name="contactName", pattern="[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+", required)
             label(class="contact__label", for="contactName") Nombre Completo
@@ -33,7 +33,7 @@ block body
             input(class="form__input contact__input", id="contactEmail", type="email", name="contactEmail", required)
             label(class="contact__label", for="contactEmail") Email
           .contact-form__item
-            input(class="form__input contact__input", id="contactPhone", type="tel", name="contactEmail", minlength="7", maxlength="10", pattern="[0-9]*", title="Ingresa un número telefónico valido", required)
+            input(class="form__input contact__input", id="contactPhone", type="tel", name="contactPhone", minlength="7", maxlength="10", pattern="[0-9]*", title="Ingresa un número telefónico valido", required)
             label(class="contact__label", for="contactPhone") Teléfono
           .contact-form__item
             input(class="form__input contact__input", id="contactCompany", type="text", name="contactCompany", pattern="[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+", required)
@@ -41,14 +41,15 @@ block body
           .contact-form__item.select-container
             select(class="form__input contact__input", id="contactService", name="contactService", required)
               option(value="")
-              option(value="service-01") Servicios de TI.
-              option(value="service-02") Servicios de Marketing Digital.
-              option(value="service-03") Contactar para una conferencia.
-              option(value="service-03") Realizar una colaboración.
+              option(value="service-01") Servicios de TI
+              option(value="service-02") Servicios de Marketing Digital
+              option(value="service-03") Contactar para una conferencia
+              option(value="service-04") Realizar una colaboración
+              option(value="service-05") Realizar Prácticas Profesionales
             label(class="contact__label", for="contactService") Me interesa:
           .contact-form__item
-            textarea(class="form__input contact__input contact__text", id="contactTextArea", name="mensaje", rows="10" cols="50", pattern="[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+", required)
-            label(class="contact__label", for="contactTextArea") Cuentanos más:
+            textarea(class="form__input contact__input contact__text", id="contactMessage", name="contactMessage", rows="10" cols="50", pattern="[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+", required)
+            label(class="contact__label", for="contactMessage") Cuentanos más:
           .contact-form__item
             input(class="contact__submit", type="submit", value="Contacta ahora")
   //- Customers Logo

@@ -100,9 +100,10 @@ module.exports = {
       skipWaiting: true,
     }),
     new CopyPlugin([
-      { from: './src/.htaccess', to: './'},
-      { from: './src/googlecb5100a3fdb1ed75.html', to:'./'},
-      { from: './src/manifest.json', to:'./'}
+      { from: './src/.htaccess', to: './' },
+      { from: './src/googlecb5100a3fdb1ed75.html', to: './' },
+      { from: './src/manifest.json', to: './' },
+      { from: './src/email.php', to: './' }
     ]),
   ]
 };
