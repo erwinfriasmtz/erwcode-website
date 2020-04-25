@@ -13,7 +13,7 @@ html(lang="es-MX")
   head
     //- Meta Tags
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     if pageTitle === 'Home'
       title= `${siteName} | Tecnologías de la Información & Marketing Digital`
@@ -44,7 +44,8 @@ html(lang="es-MX")
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-M2LFZ55');
     //- Links
-    link(rel="shortcut icon" href="./assets/images/favicon.png")
+    link(rel="shortcut icon" href="/assets/images/favicon.png")
+    link(rel="apple-touch-icon", href="/assets/images/favicon.png")
     link(rel="manifest", href="manifest.json")
 
   body
