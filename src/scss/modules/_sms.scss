@@ -54,11 +54,13 @@
       grid-template-columns: repeat(2,1fr);
       gap: 1em;
     }
+
     // .sms-form__item
     &__item {
       margin: 1em 0;
+      position: relative;
 
-      &:nth-child(2) { display: flex;}
+      &:nth-child(2) { display: flex; }
     }
 
     // .sms-form__submit
@@ -70,6 +72,35 @@
       cursor: pointer;
 
       &:hover { background-color: var(--secondary-color); }
+    }
+  }
+
+  // sms__label
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 14%;
+    display: inline-block;
+    pointer-events: none;
+    transition: all 0.2s;
+    color: #7f8c8d;
+    padding-left: 1em;
+    font-size: 0.9em;
+  }
+
+  // sms__input
+  &__input {
+    margin-bottom: 1.5em;
+
+    &:focus ~ .sms__label , &:valid ~ .sms__label {
+      transform: translateY(-30px);
+      color: var(--secondary-color);
+      font-size: 0.8em;
+      padding-left: 0;
+    }
+
+    &:focus , &:valid {
+      border: solid 1px white;
     }
   }
 }

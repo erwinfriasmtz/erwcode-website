@@ -5,7 +5,9 @@ article.sms
     .sms__item
       form.sms-form(action="#", method="POST")
         .sms-form__item
-          input.form__input(type="text", name="text", placeholder="Escribe tu nombre", required)
+          input(class="form__input sms__input", id="smsName", type="text", name="text", required)
+          label(class="sms__label", for="smsName") Escribe tu Nombre
         .sms-form__item
-          input.form__input(type="email", name="email", placeholder="Correo Electrónico", required)
-          input.sms-form__submit(type="image", src="/assets/images/right-arrow.svg", alt="Formulario de Noticias ErwCode")
+          input(class="form__input sms__input", id="smsEmail" type="email", name="email", required)
+          label(class="sms__label", for="smsEmail") Correo Electrónico
+          input(class="sms-form__submit", type="image", src="/assets/images/right-arrow.svg", alt="Formulario de Noticias ErwCode")
