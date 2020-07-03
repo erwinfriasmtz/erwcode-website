@@ -28,6 +28,12 @@
 
     &:hover { background-position: bottom;}
 
+    &--sacamolp {
+      background: url('/assets/images/sacamolp.jpg');
+      background-size: cover;
+      background-position: top;
+    }
+
     &--oportunosmx {
       background: url('/assets/images/oportunosmx.jpg');
       background-size: cover;
@@ -66,6 +72,12 @@
 
     &--sacamo {
       background: url('/assets/images/sacamo.jpg');
+      background-size: cover;
+      background-position: top;
+    }
+
+    &--bajatuseguro {
+      background: url('/assets/images/bajatuseguro.jpg');
       background-size: cover;
       background-position: top;
     }

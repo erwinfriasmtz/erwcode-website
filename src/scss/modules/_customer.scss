@@ -4,7 +4,7 @@
   margin: 2em auto;
   text-align: center;
 
-  @include mq(m) { margin: 3em auto; }
+  @include mq(m) { width: 100%; margin: 3em auto; }
   // .customer__title
   &__title {
     text-transform: uppercase;
@@ -29,6 +29,7 @@
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
+    gap: 1em;
 
     @include mq(m) { grid-template-columns: repeat(4,1fr); }
     @include mq(xl) { grid-template-columns: repeat(6,1fr); }
@@ -41,12 +42,10 @@
 
   // .customer__logo
   &__logo {
-    padding: 0.5em;
     filter: grayscale(90%);
 
     &:hover { filter: grayscale(0); }
 
     @include mq(m) { padding: 1em; }
-    @include mq(l) { padding: 0 1em; }
   }
 }
